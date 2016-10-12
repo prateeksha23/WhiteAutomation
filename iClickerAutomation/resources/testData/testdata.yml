@@ -1,0 +1,64 @@
+﻿Application:
+ path : "C:\\Users\\prateekshachauhan\\Desktop\\iclicker v7.4.2-Win\\iclicker.exe"
+ globalConfigPath: "C:\\Users\\prateekshachauhan\\Desktop\\iclicker v7.4.2-Win\\Resources\\global_config.xml"
+ processName: iclicker
+
+instructorRemoteID: 864C3BF1
+
+mainWindow:
+ title: i>clicker 7.4.2
+
+courseSettingWindow:
+ title: Course Settings
+ scoring:
+   criteriaPartcipationPoints:
+     option1: 100% of questions
+     option2: all but one question
+     option3: at least 75% of the questions
+     option4: at least 50% of the questions 
+     option5: at least one question
+
+ gradebook:
+  rosterSource:
+   option1: General (No LMS)
+   option2: ""
+   option3: ANGEL
+   option4: Blackboard Learn
+   option5: Canvas
+   option6: Desire2Learn
+   option7: Moodle
+   option8: Sakai
+
+ toolbar:
+   toolbarSize:
+     option1: Small
+     option2: Normal
+
+ rollcall:
+     registration:
+       option1: Name (Last name, First name)
+       option2: Student ID
+       option3: Both Name and Student ID
+       option4: Student continues to be displayed
+       option5: Student is no longer displayed
+ general:
+     instructorRemoteID: 864C3BF1
+     welcomeMessage: Welcome Message
+
+toolbar:
+ title : iClickerLite main Toolbar
+
+course:
+ institutionName: REEF Education
+
+resultswindow:
+ title: Results Chart
+
+aboutWindow:
+ title: i>clicker
+
+updatesWindow:
+ title: i>clicker Software Update
+
+web:
+ url: https://reef:trogon@web-qa.reef-education.com/

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{08D7F714-89BB-4DE2-990F-5251AE40E876}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>iClickerAutomation</RootNamespace>
+    <AssemblyName>iClickerAutomation</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="TestStack.White">
+      <HintPath>..\packages\TestStack.White.0.13.3\lib\net40\TestStack.White.dll</HintPath>
+    </Reference>
+    <Reference Include="TestStack.White.WebBrowser">
+      <HintPath>..\packages\TestStack.White.WebBrowser.0.13.3\lib\net40\TestStack.White.WebBrowser.dll</HintPath>
+    </Reference>
+    <Reference Include="TestStack.White.Reporting">
+      <HintPath>..\packages\TestStack.White.ScreenObjects.0.13.3\lib\net40\TestStack.White.Reporting.dll</HintPath>
+    </Reference>
+    <Reference Include="TestStack.White.ScreenObjects">
+      <HintPath>..\packages\TestStack.White.ScreenObjects.0.13.3\lib\net40\TestStack.White.ScreenObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\packages\Castle.Core.3.3.3\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="YamlDotNet">
+      <HintPath>..\packages\YamlDotNet.3.7.0\lib\net35\YamlDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver">
+      <HintPath>..\packages\Selenium.WebDriver.2.47.0\lib\net40\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support">
+      <HintPath>..\packages\Selenium.Support.2.47.0\lib\net40\WebDriver.Support.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="NLog">
+      <HintPath>..\packages\NLog.4.1.2\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\com.qait.automation\SessionInitiator.cs" />
+    <Compile Include="src\com.qait.automation.tests\CreateReefEnableCourseTest.cs" />
+    <Compile Include="src\com.qait.automation.utils\WaitUtil.cs" />
+    <Compile Include="src\com.qait.automation.utils\YamlReader.cs" />
+    <Compile Include="src\com.qait.automation.pageObjects.desktop\CourseDetailsWindow.cs" />
+    <Compile Include="src\com.qait.automation.pageObjects.desktop\CourseSettingsWindow.cs" />
+    <Compile Include="src\com.qait.automation.pageObjects.desktop\CreateCourseWindow.cs" />
+    <Compile Include="src\com.qait.automation.pageObjects.desktop\CreateMyReefPollingAccountWindow.cs" />
+    <Compile Include="src\com.qait.automation.pageObjects.desktop\LogInToMyReefPollingAccountWindow.cs" />
+    <Compile Include="src\com.qait.automation.pageObjects.desktop\MainWindow.cs" />
+    <Compile Include="src\com.qait.automation.pageObjects.web\LoginPageActions.cs" />
+    <Compile Include="src\com.qait.automation.pageObjects.desktop\WindowsBaseAction.cs" />
+    <Compile Include="src\com.qait.automation.pageObjects.web\WebBaseAction.cs" />
+    <Compile Include="src\com.qait.automation.pageObjects.web\CoursesPageActions.cs" />
+    <Compile Include="src\com.qait.automation.pageObjects.desktop\ResultChartWindow.cs" />
+    <Compile Include="src\com.qait.automation.tests\MainWindowTest.cs" />
+    <Compile Include="src\com.qait.automation.pageObjects.desktop\GradebookWindow.cs" />
+    <Compile Include="src\com.qait.automation.pageObjects.desktop\HelpWindow.cs" />
+    <Compile Include="src\com.qait.automation.UI.desktop\CourseDetailsUI.cs" />
+    <Compile Include="src\com.qait.automation.UI.desktop\CourseSettingsUI.cs" />
+    <Compile Include="src\com.qait.automation.UI.desktop\CreateCourseUI.cs" />
+    <Compile Include="src\com.qait.automation.UI.desktop\CreateReefPollingAccountUI.cs" />
+    <Compile Include="src\com.qait.automation.UI.desktop\GradebookUI.cs" />
+    <Compile Include="src\com.qait.automation.UI.desktop\HelpUI.cs" />
+    <Compile Include="src\com.qait.automation.UI.desktop\ToolBarUI.cs" />
+    <Compile Include="src\com.qait.automation.UI.desktop\LoginReefAccountUI.cs" />
+    <Compile Include="src\com.qait.automation.UI.desktop\MainWindowUI.cs" />
+    <Compile Include="src\com.qait.automation.UI.desktop\ResultChartUI.cs" />
+    <Compile Include="src\com.qait.automation.tests\ScoringTest.cs" />
+    <Compile Include="src\com.qait.automation.tests\GradebookAndRollCallSettingsTest.cs" />
+    <Compile Include="src\com.qait.automation.pageObjects.desktop\ToolBarWindow.cs" />
+    <Compile Include="src\com.qait.automation.tests\ToolbarTest.cs" />
+    <Compile Include="src\com.qait.automation.tests\PollingSettingsTest.cs" />
+    <Compile Include="src\com.qait.automation.tests\GeneralSettingsTest.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="resources\testData\testdata.yml" />
+    <None Include="resources\drivers\chromedriver.exe" />
+    <None Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="NLog.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\" />
+    <Folder Include="src\com.qait.automation\" />
+    <Folder Include="resources\" />
+    <Folder Include="resources\testData\" />
+    <Folder Include="src\com.qait.automation.tests\" />
+    <Folder Include="src\com.qait.automation.utils\" />
+    <Folder Include="resources\drivers\" />
+    <Folder Include="src\com.qait.automation.UI.desktop\" />
+  </ItemGroup>
+</Project>

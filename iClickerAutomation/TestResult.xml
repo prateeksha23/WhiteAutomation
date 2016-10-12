@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="D:\Projects\iClicker\iclicker\iClickerAutomation\bin\Debug\iClickerAutomation.dll" total="31" errors="2" failures="1" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-09-25" time="17:36:35">
+  <environment nunit-version="2.6.4.14350" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="D:\Projects\iClicker\iclicker\iClickerAutomation" machine-name="ASDW0055" user="prateekshachauhan" user-domain="QAIT" />
+  <culture-info current-culture="en-IN" current-uiculture="en-GB" />
+  <test-suite type="Assembly" name="D:\Projects\iClicker\iclicker\iClickerAutomation\bin\Debug\iClickerAutomation.dll" executed="True" result="Failure" success="False" time="265.013" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="iClickerAutomation" executed="True" result="Failure" success="False" time="265.006" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="ToolbarTest" executed="True" result="Failure" success="False" time="264.977" asserts="0">
+            <results>
+              <test-case name="iClickerAutomation.ToolbarTest.Step01_createNewCourse" executed="True" result="Success" success="True" time="14.290" asserts="3" />
+              <test-case name="iClickerAutomation.ToolbarTest.Step02_openSettingsForCreatedCourse" executed="True" result="Success" success="True" time="0.855" asserts="1" />
+              <test-case name="iClickerAutomation.ToolbarTest.Step03_enableReefPolling" executed="True" result="Success" success="True" time="18.053" asserts="10" />
+              <test-case name="iClickerAutomation.ToolbarTest.Step04_startNewSession" executed="True" result="Success" success="True" time="6.082" asserts="1" />
+              <test-case name="iClickerAutomation.ToolbarTest.Step05_verifyButtonsPresentOnToolsbar" executed="True" result="Success" success="True" time="0.514" asserts="5" />
+              <test-case name="iClickerAutomation.ToolbarTest.Step06_verifyButtonsDisappearOnMimimizingTheToolbar" executed="True" result="Success" success="True" time="11.615" asserts="0" />
+              <test-case name="iClickerAutomation.ToolbarTest.Step07_verifyAllButtonsArePresentOnMaximizingTheToolabr" executed="True" result="Success" success="True" time="1.675" asserts="5" />
+              <test-case name="iClickerAutomation.ToolbarTest.Step08_verifyTimerStartsOnStaringPoll" executed="True" result="Success" success="True" time="5.509" asserts="2" />
+              <test-case name="iClickerAutomation.ToolbarTest.Step09_createStudent" executed="True" result="Success" success="True" time="27.136" asserts="4" />
+              <test-case name="iClickerAutomation.ToolbarTest.Step10_addCourse" executed="True" result="Success" success="True" time="5.456" asserts="4" />
+              <test-case name="iClickerAutomation.ToolbarTest.Step11_joinSession" executed="True" result="Failure" success="False" time="1.203" asserts="1">
+                <failure>
+                  <message><![CDATA[  Assertion Failed : Current page title is not correct
+  Expected string length 24 but was 31. Strings differ at index 19.
+  Expected: "REEF Education - Courses", ignoring case
+  But was:  "REEF Education - Confirm Course"
+  ------------------------------^
+]]></message>
+                  <stack-trace><![CDATA[at iClickerAutomation.WebBaseAction.verifyPageTitle(String title) in d:\Projects\iClicker\iclicker\iClickerAutomation\src\com.qait.automation.pageObjects.web\WebBaseAction.cs:line 35
+at iClickerAutomation.CoursesPageActions.selectCourse(String courseName) in d:\Projects\iClicker\iclicker\iClickerAutomation\src\com.qait.automation.pageObjects.web\CoursesPageActions.cs:line 77
+at iClickerAutomation.ToolbarTest.Step11_joinSession() in d:\Projects\iClicker\iclicker\iClickerAutomation\src\com.qait.automation.tests\ToolbarTest.cs:line 100
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="iClickerAutomation.ToolbarTest.Step12_stopPolling" executed="True" result="Success" success="True" time="5.212" asserts="1" />
+              <test-case name="iClickerAutomation.ToolbarTest.Step13_startPollingForNumeric" executed="True" result="Success" success="True" time="10.796" asserts="1" />
+              <test-case name="iClickerAutomation.ToolbarTest.Step14_attemptNumericQuestion" executed="True" result="Error" success="False" time="30.150" asserts="0">
+                <failure>
+                  <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Could not find element by: By.CssSelector: .form-group.numeric-answer-textarea textarea]]></message>
+                  <stack-trace><![CDATA[at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+at OpenQA.Selenium.IWebElement.SendKeys(String text)
+at iClickerAutomation.CoursesPageActions.attemptNumericQuestion() in d:\Projects\iClicker\iclicker\iClickerAutomation\src\com.qait.automation.pageObjects.web\CoursesPageActions.cs:line 97
+at iClickerAutomation.ToolbarTest.Step14_attemptNumericQuestion() in d:\Projects\iClicker\iclicker\iClickerAutomation\src\com.qait.automation.tests\ToolbarTest.cs:line 118
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="iClickerAutomation.ToolbarTest.Step15_startPollingForShortAnswer" executed="True" result="Success" success="True" time="10.609" asserts="1" />
+              <test-case name="iClickerAutomation.ToolbarTest.Step16_attemptShortAnswerQuestion" executed="True" result="Error" success="False" time="30.063" asserts="0">
+                <failure>
+                  <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Could not find element by: By.Id: shortAnswerInput]]></message>
+                  <stack-trace><![CDATA[at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+at OpenQA.Selenium.IWebElement.SendKeys(String text)
+at iClickerAutomation.CoursesPageActions.attemptShortAnswerQuestion() in d:\Projects\iClicker\iclicker\iClickerAutomation\src\com.qait.automation.pageObjects.web\CoursesPageActions.cs:line 104
+at iClickerAutomation.ToolbarTest.Step16_attemptShortAnswerQuestion() in d:\Projects\iClicker\iclicker\iClickerAutomation\src\com.qait.automation.tests\ToolbarTest.cs:line 130
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="iClickerAutomation.ToolbarTest.Step17_clickOnShowHideResultsIcon" executed="True" result="Success" success="True" time="0.217" asserts="0" />
+              <test-case name="iClickerAutomation.ToolbarTest.Step18_verifyQuestionsOnResultsChart" executed="True" result="Success" success="True" time="0.814" asserts="2" />
+              <test-case name="iClickerAutomation.ToolbarTest.Step19_openCourseSettingsUsingKeys" executed="True" result="Success" success="True" time="11.788" asserts="1" />
+              <test-case name="iClickerAutomation.ToolbarTest.Step20_setAnonymousPollingUsingKeys" executed="True" result="Success" success="True" time="0.017" asserts="0" />
+              <test-case name="iClickerAutomation.ToolbarTest.Step21_openResultsChartUsingKeys" executed="True" result="Success" success="True" time="6.125" asserts="0" />
+              <test-case name="iClickerAutomation.ToolbarTest.Step22_closeResultsChartUsingKeys" executed="True" result="Success" success="True" time="0.015" asserts="0" />
+              <test-case name="iClickerAutomation.ToolbarTest.Step23_openRollCallRegistrationWindowUsingKeys" executed="True" result="Success" success="True" time="3.570" asserts="0" />
+              <test-case name="iClickerAutomation.ToolbarTest.Step24_startPollingUsingKeys" executed="True" result="Success" success="True" time="8.224" asserts="1" />
+              <test-case name="iClickerAutomation.ToolbarTest.Step25_stopPollingUsingKeys" executed="True" result="Success" success="True" time="13.502" asserts="0" />
+              <test-case name="iClickerAutomation.ToolbarTest.Step26_minimizeToolBarUsingKeys" executed="True" result="Success" success="True" time="10.645" asserts="0" />
+              <test-case name="iClickerAutomation.ToolbarTest.Step27_maximizeToolBarUsingKeys" executed="True" result="Success" success="True" time="0.433" asserts="5" />
+              <test-case name="iClickerAutomation.ToolbarTest.Step28_closeToolbarUsingKeys" executed="True" result="Success" success="True" time="0.446" asserts="0" />
+              <test-case name="iClickerAutomation.ToolbarTest.Step29_verifymcOnlyParmInConfigFile" executed="True" result="Success" success="True" time="0.091" asserts="1" />
+              <test-case name="iClickerAutomation.ToolbarTest.Step30_changemcOnlyValueToTrueAndVerify" executed="True" result="Success" success="True" time="21.452" asserts="1" />
+              <test-case name="iClickerAutomation.ToolbarTest.Step31_closeToolBar" executed="True" result="Success" success="True" time="0.977" asserts="0" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
